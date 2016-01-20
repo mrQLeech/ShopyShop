@@ -6,8 +6,10 @@ using System.Web;
 
 namespace ShopyShop.Models
 {
-    public class ProductContext:DbContext
+    public class ProductContexts:DbContext
     {
         public DbSet<Product> Products { get; set; }
     }
+
+    public
 }

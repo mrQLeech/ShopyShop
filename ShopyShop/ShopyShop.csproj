@@ -216,9 +216,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Discount.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Images.cs" />
     <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ShopyData.cs" />
+    <Compile Include="Models\ProductContexts.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
