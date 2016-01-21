@@ -5,10 +5,10 @@ using System.Web;
 
 namespace ShopyShop.Models
 {
-    public class ProductImage
+    public class ProductImage: BaseEntity
     {
-        public uint Id { get; set; }
-        public int Id { get; set; }
+        
+        public uint ProductId  { get; set; }
         public int PersonBusinessEntityID { get; set; }
         public byte[] Photo { get; set; }
         public string LargePhotoFile { get; set; }

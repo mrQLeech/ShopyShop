@@ -5,9 +5,8 @@ using System.Web;
 
 namespace ShopyShop.Models
 {
-    public class Discount
+    public class Discount: BaseEntity
     {
-        public uint Id { get; set; }
         public string Name { get; set; }
         public int DiscountValue { get; set; }
         public DateTime DateBegin { get; set; }
