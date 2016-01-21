@@ -10,6 +10,8 @@ namespace ShopyShop.Models
         public uint Id { get; set; }
         public string Name { get; set; }
         public bool IsCanEditProducts { get; set; }
+
+        public virtual List<Users> Users { get; set; }
         
     }
 }
