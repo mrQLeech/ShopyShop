@@ -12,5 +12,7 @@ namespace ShopyShop.Models
         public int DiscountValue { get; set; }
         public DateTime DateBegin { get; set; }
         public DateTime DateEnd { get; set; }
+
+        public virtual List<Product> Products { get; set; }
     }
 }

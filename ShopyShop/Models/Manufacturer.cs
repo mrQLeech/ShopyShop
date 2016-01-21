@@ -19,5 +19,7 @@ namespace ShopyShop.Models
         public uint Version { get; set; }
         public DateTime BeginDate { get; set; }
         public DateTime EndDate { get; set; }
+
+        public virtual List<Product> Products { get; set; }
     }
 }

@@ -10,7 +10,11 @@ namespace ShopyShop.Models
         public uint Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public string EMAIL { get; set; }
-        public AccessGroup GROUP { get; set; }
+        public string EMail { get; set; }
+
+        public uint Version { get; set; }
+        public DateTime BeginDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public virtual List<AccessGroup> GROUPS { get; set; }
     }
 }
