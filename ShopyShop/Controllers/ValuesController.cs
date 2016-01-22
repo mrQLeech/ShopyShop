@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace ShopyShop.Controllers
 {
-    [Authorize]
+    [a]
     public class ValuesController : ApiController
     {
         // GET api/values
