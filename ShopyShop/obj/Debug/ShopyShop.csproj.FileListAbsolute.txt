@@ -74,3 +74,4 @@ D:\temp\q\GitRepo\GitHub\ShopyShop\ShopyShop\bin\Microsoft.Owin.Security.Microso
 D:\temp\q\GitRepo\GitHub\ShopyShop\ShopyShop\bin\System.Web.Http.Owin.xml
 D:\temp\q\GitRepo\GitHub\ShopyShop\ShopyShop\obj\Debug\ShopyShop.dll
 D:\temp\q\GitRepo\GitHub\ShopyShop\ShopyShop\obj\Debug\ShopyShop.pdb
+D:\temp\q\GitRepo\GitHub\ShopyShop\ShopyShop\obj\Debug\ShopyShop.csprojResolveAssemblyReference.cache
