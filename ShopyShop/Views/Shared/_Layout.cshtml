@@ -20,8 +20,56 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                     <li>@Html.ActionLink("CreateProduct", "Create", "Products", new { area = "" }, null)</li>
+                </ul>
+                <ul class="nav nav-pills pull-right">
+                   <!-- <li>
+                        <form class="input-append" method="GET" action="/search" style="margin-top:4px;margin-bottom:5px;">
+                        <input type="text" title="Enter keyword(s) to find" id="kw" name="kw" class="span2" maxlength="40">
+                        <button type="submit" class="btn">
+                            <i class="icon-search" title="Search"></i>
+                            </button>
+                        </form>
+                        &nbsp;&nbsp;
+                    </li>-->
+                    <li class="dropdown" id="menuLogin">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                        <div class="dropdown-menu" style="padding:17px;">
+                            <form id="formLogin" class="form">
+                                <label>Login</label>
+                                <input name="_csrf" id="token" type="hidden" value="S78tnkBA-prlfT2QoY8e61tReokA2v6zR2UQ">
+                                <input name="username" id="username" type="text" placeholder="Username" pattern="^[a-z,A-Z,0-9,_]{6,15}$" data-valid-min="6" title="Enter your username" required="">
+                                <input name="password" id="password" type="password" placeholder="Password" title="Enter your password" required=""><br>
+                                <button type="button" id="btnLogin" class="btn">Login</button>
+                            </form>
+                            <form><a href="#" title="Fast and free sign up!" id="btnNewUser" data-toggle="collapse" data-target="#formRegister">New User? Sign-up..</a></form>
+                            <form id="formRegister" class="form collapse">
+                                <input name="_csrf" id="token" type="hidden" value="S78tnkBA-prlfT2QoY8e61tReokA2v6zR2UQ">
+                                <input name="email" id="inputEmail" type="email" placeholder="Email" required="">
+                                <input name="username" id="inputUsername" type="text" placeholder="Username" pattern="^[a-z,A-Z,0-9,_]{6,15}$" data-valid-min="6" title="Choose a username" required=""><br>
+                                <input name="password" id="inputpassword" type="password" placeholder="Password" required="">
+                                <input name="verify" id="inputVerify" type="password" placeholder="Password (again)" required=""><br>
+                                <button type="button" id="btnRegister" class="btn">Sign Up</button>
+                            </form>
+                            <a data-toggle="modal" role="button" href="#forgotPasswordModal">Forgot username or password?</a>
+                            <a data-toggle="modal" role="button" href="#contactModal"><small>Need help? Contact us</small></a>
+                        </div>
+                    </li>
+                    <li class="dropdown hide" id="menuUser">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="See your Bootply collection and profile">
+                            <i class="icon-user icon-xxlarge"> </i> <span id="lblUsername"></span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user">Dashboard</a></li>
+                            <li><a href="/new">Create New Bootply</a></li>
+
+                            <li><a href="/logout">Logout</a></li>
+                            <li class="divider"> </li>
+                            <li><a href="/bootstrap-community">Community</a></li>
+                            <li><a href="/about">About</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -36,6 +84,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
     @RenderSection("scripts", required: false)
 </body>
 </html>

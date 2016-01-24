@@ -1,0 +1,50 @@
+﻿@model ShopyShop.Models.ProductsSection
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductsSection</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VisibleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VisibleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ord)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

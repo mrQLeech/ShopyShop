@@ -1,17 +1,20 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+@media screen and (max-width: 767px) {
+    .clear-collapse{
+        clear: both;
+    }
+    .collapse-hidden{
+        display: none;
+    }
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+@media screen and (min-width: 768px){
+    .navbar-collapse.collapse.uncollapse-hidden{
+        display: none!important;
+    }
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.navbar-toggle {
+    color: #FFF;
 }
+
